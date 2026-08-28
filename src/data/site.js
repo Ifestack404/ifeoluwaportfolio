@@ -1,14 +1,14 @@
 // Edit this file with your real info, projects, and links.
 
 export const brand = {
-  name: 'OGUNROMILA',
+  name: 'IFE STACK',
   tagline: 'Full-Stack Web Developer & Digital Craftsman',
   description:
     'Custom websites and digital experiences built from scratch for ambitious brands worldwide. Fast, modern, and designed to help your business grow.',
 }
 
 export const profile = {
-  name: 'Ogunromila',
+  name: 'IFE STACK',
   role: 'Full-Stack Web Developer',
   headline: 'I build fast, modern websites',
   headlineAccent: 'that help businesses grow.',

@@ -40,11 +40,4 @@ export const myWebsites = [
     description:
       'Cinematic storytelling website built with engaging visuals and motion design.',
   },
-  {
-    id: 5,
-    name: 'Website 5 — Add your title here',
-    url: '',
-    category: 'Portfolio / Other',
-    description: 'Describe what you built for this client.',
-  },
 ]

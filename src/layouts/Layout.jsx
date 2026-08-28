@@ -8,7 +8,9 @@ export default function Layout() {
     <>
       <ScrollToTop />
       <Navbar />
-      <Outlet />
+      <div className="page-shell">
+        <Outlet />
+      </div>
       <Footer />
     </>
   )

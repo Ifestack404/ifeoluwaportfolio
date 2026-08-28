@@ -26,8 +26,27 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   color: var(--text);
-  background: var(--bg);
+  background:
+    linear-gradient(rgba(59, 130, 246, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.035) 1px, transparent 1px),
+    var(--bg);
+  background-size: 48px 48px;
   -webkit-font-smoothing: antialiased;
+}
+
+.page-shell {
+  animation: page-enter 0.65s ease both;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h1,
@@ -383,6 +402,31 @@ p {
   padding-bottom: 5rem;
   position: relative;
   overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  right: 10%;
+  bottom: 8%;
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(96, 165, 250, 0.2);
+  border-radius: 50%;
+  animation: orbit-pulse 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes orbit-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.08);
+  }
 }
 
 .hero::before {

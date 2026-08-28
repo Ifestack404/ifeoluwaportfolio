@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700&display=swap');
 
 :root {
-  --bg: #0a0e1a;
-  --bg-alt: #0f1422;
-  --surface: #151b2a;
-  --surface-hover: #1b2438;
-  --border: rgba(148, 163, 184, 0.1);
-  --text: #94a3b8;
-  --text-strong: #f1f5f9;
-  --accent: #3b82f6;
-  --accent-2: #60a5fa;
-  --accent-dim: rgba(59, 130, 246, 0.12);
-  --success: #34d399;
+  --bg: #171a1d;
+  --bg-alt: #202428;
+  --surface: #282d30;
+  --surface-hover: #32393c;
+  --border: rgba(239, 231, 218, 0.14);
+  --text: #b9b4aa;
+  --text-strong: #f2ede4;
+  --accent: #d27b55;
+  --accent-2: #e0ad72;
+  --accent-dim: rgba(210, 123, 85, 0.14);
+  --success: #86a58a;
   --radius: 12px;
   --radius-lg: 20px;
-  --shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+  --shadow: 0 24px 48px rgba(0, 0, 0, 0.24);
   --font: 'DM Sans', system-ui, sans-serif;
   --font-display: 'Outfit', system-ui, sans-serif;
   --container: 1120px;
@@ -26,11 +26,9 @@ body {
   font-size: 1rem;
   line-height: 1.65;
   color: var(--text);
-  background:
-    linear-gradient(rgba(59, 130, 246, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.035) 1px, transparent 1px),
-    var(--bg);
-  background-size: 48px 48px;
+  background-color: var(--bg);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.035'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -238,13 +236,13 @@ p {
 }
 
 .btn--primary {
-  background: linear-gradient(135deg, var(--accent), #0ea5e9);
-  color: #0b0f14;
-  box-shadow: 0 8px 24px rgba(56, 189, 248, 0.25);
+  background: var(--accent);
+  color: #171a1d;
+  box-shadow: 0 8px 24px rgba(210, 123, 85, 0.18);
 }
 
 .btn--primary:hover {
-  box-shadow: 0 12px 32px rgba(56, 189, 248, 0.35);
+  box-shadow: 0 12px 32px rgba(210, 123, 85, 0.26);
 }
 
 .btn--outline {
@@ -436,7 +434,7 @@ p {
   right: -10%;
   width: 60%;
   height: 80%;
-  background: radial-gradient(ellipse, rgba(56, 189, 248, 0.12), transparent 70%);
+  background: radial-gradient(ellipse, rgba(210, 123, 85, 0.1), transparent 70%);
   pointer-events: none;
 }
 

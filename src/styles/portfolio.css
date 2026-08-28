@@ -460,6 +460,7 @@ p {
   right: 1.25rem;
   bottom: 1.25rem;
   left: 1.25rem;
+  z-index: 2;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -470,11 +471,14 @@ p {
 }
 
 .molecule-portrait__image {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   width: 100% !important;
   height: 100% !important;
-  min-height: 500px;
   display: block !important;
   object-fit: cover;
+  object-position: center;
 }
 
 .molecule-portrait__status {

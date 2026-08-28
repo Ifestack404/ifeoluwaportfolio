@@ -1,20 +1,8 @@
-import { useEffect, useRef } from 'react'
-
 export default function MoleculePortrait() {
-  const imageRef = useRef(null)
-
-  useEffect(() => {
-    // Image displays simply without animation
-    if (imageRef.current) {
-      imageRef.current.style.objectFit = 'cover'
-    }
-  }, [])
-
   return (
     <div className="molecule-portrait" aria-label="Profile portrait">
       <img 
-        ref={imageRef}
-        src="/profile-portrait.jpg" 
+        src="/6051107654890884924%20(1).jpg" 
         alt="IFE STACK - Full Stack Web Developer"
         className="molecule-portrait__image"
         style={{

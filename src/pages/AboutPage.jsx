@@ -2,7 +2,6 @@ import usePageTitle from '../hooks/usePageTitle'
 import PageHeader from '../components/PageHeader'
 import About from '../components/About'
 import WorkProcess from '../components/WorkProcess'
-import CTASection from '../components/CTASection'
 import { brand, pageMeta } from '../data/site'
 
 export default function AboutPage() {
@@ -13,11 +12,10 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About"
         title={`The developer behind ${brand.name}`}
-        description="Self-taught web developer building custom sites for clients on Fiverr and beyond."
+        description="Custom websites, a clear process, and live work you can review before you hire."
       />
       <About />
       <WorkProcess />
-      <CTASection />
     </main>
   )
 }

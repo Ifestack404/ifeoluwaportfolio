@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { brand, profile, whyHire } from '../data/site'
+import { profile, stats } from '../data/site'
 import MoleculePortrait from './MoleculePortrait'
 
 export default function Hero() {
@@ -7,37 +7,45 @@ export default function Hero() {
     <section className="hero section">
       <div className="container hero__grid">
         <div className="hero__content">
-          <p className="eyebrow">{profile.availability}</p>
+          <p className="hero__status">
+            <span className="hero__status-dot" aria-hidden="true" />
+            {profile.availability}
+          </p>
+
+          <p className="hero__role">{profile.role}</p>
+
           <h1>
             {profile.headline}{' '}
             <span className="text-gradient">{profile.headlineAccent}</span>
           </h1>
-          <p className="hero__lead">
-            Welcome to <strong>{brand.name}</strong> — {profile.bio}
-          </p>
+
+          <p className="hero__lead">{profile.bio}</p>
 
           <div className="hero__actions">
             <a href="#my-websites" className="btn btn--primary">
-              View My Websites
+              View My Work
             </a>
             <Link to="/contact" className="btn btn--outline">
               Get a Quote
             </Link>
             <a
               href={profile.fiverrUrl}
-              className="btn btn--ghost"
+              className="hero__fiverr"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Fiverr Profile
+              Fiverr profile
             </a>
           </div>
 
-          <ul className="hero__checks">
-            {whyHire.map((item) => (
-              <li key={item}>{item}</li>
+          <dl className="hero__stats">
+            {stats.map((item) => (
+              <div key={item.label} className="hero__stat">
+                <dt>{item.label}</dt>
+                <dd>{item.value}</dd>
+              </div>
             ))}
-          </ul>
+          </dl>
         </div>
 
         <MoleculePortrait />

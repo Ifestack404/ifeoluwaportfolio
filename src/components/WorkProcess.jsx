@@ -7,7 +7,7 @@ export default function WorkProcess() {
         <div className="section-header">
           <p className="eyebrow">How I Work</p>
           <h2>A simple, reliable process</h2>
-          <p>Buyers get clarity at every step — no surprises, no jargon.</p>
+          <p>From first message to launch, you always know what happens next.</p>
         </div>
 
         <ol className="process__steps">

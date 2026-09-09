@@ -11,8 +11,8 @@ export default function ProjectsPage() {
     <main>
       <PageHeader
         eyebrow="Portfolio"
-        title="Websites I've built"
-        description="Click any link below to open the live website in a new tab and review my work."
+        title="Work you can click, test, and trust"
+        description="Every project below is a live website. Review the design, speed, and quality — then hire with a clear picture of what you’ll get."
       />
       <MyWebsitesShowcase />
       <CTASection />

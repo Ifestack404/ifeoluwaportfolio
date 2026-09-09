@@ -12,8 +12,17 @@ export const profile = {
   role: 'Full-Stack Web Developer',
   headline: 'I build fast, modern websites',
   headlineAccent: 'that help businesses grow.',
-  bio: `Self-taught full-stack web developer focused on creating clean, responsive, and high-performance websites. I handle design, development, and deployment — so you get a professional site that works perfectly on every device.`,
-  email: 'ifeoluwaogunromila@gmail.com',
+  bio: `I design, build, and launch custom websites for businesses that need to look credible online and turn visitors into clients.`,
+  about: {
+    headline: 'A developer who treats your website like a business asset',
+    lead:
+      'I am IFE STACK — a full-stack web developer building custom websites for founders, brands, and clients who need more than a template.',
+    story: [
+      'I handle design, development, and launch in one place. That means a clear process, a professional result, and a site that works on every device — without handing your project between three different people.',
+      'Every website is coded from scratch for your brand. You get regular updates, a realistic timeline, and the finished source files when we go live.',
+    ],
+  },
+  email: 'ifestack404@gmail.com',
   phone: '08143010299',
   location: 'Available for remote work worldwide',
   availability: 'Open for new projects',
@@ -42,7 +51,7 @@ export const pageMeta = {
   },
   about: {
     title: `About | ${brand.name}`,
-    description: `Meet ${profile.name} — the developer behind ${brand.name}. Skills, process, and what makes my work different.`,
+    description: `Meet the developer behind ${brand.name} — custom websites, a clear process, and work you can review before you hire.`,
   },
   services: {
     title: `Services | ${brand.name}`,
@@ -52,7 +61,7 @@ export const pageMeta = {
   projects: {
     title: `Portfolio | ${brand.name}`,
     description:
-      'Browse websites I designed and developed from scratch — real projects for real clients.',
+      'Review live websites I designed and developed from scratch — then hire with confidence.',
   },
   contact: {
     title: `Contact | ${brand.name}`,
@@ -263,3 +272,5 @@ export const whyHire = [
   'Clear timelines and regular updates',
   'Source code handed over to you',
 ]
+
+export const portraitSrc = '/6051107654890884924%20(1).jpg'

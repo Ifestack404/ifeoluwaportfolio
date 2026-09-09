@@ -1,30 +1,25 @@
 import { Link } from 'react-router-dom'
-import { brand, profile } from '../data/site'
+import { profile } from '../data/site'
 
 export default function CTASection() {
   return (
     <section className="cta-section section">
       <div className="container cta-section__inner">
         <div>
-          <p className="eyebrow">Ready to start?</p>
-          <h2>Let&apos;s build your website with {brand.name}</h2>
+          <p className="eyebrow">Ready when you are</p>
+          <h2>Let&apos;s build a website your customers will trust</h2>
           <p>
-            Order on Fiverr or send a message — I&apos;ll reply within 24 hours with next steps
-            and a clear quote.
+            Share your idea, timeline, and budget. I&apos;ll come back with a practical plan —
+            not a generic template pitch.
           </p>
         </div>
         <div className="cta-section__actions">
-          <a
-            href={profile.fiverrUrl}
-            className="btn btn--primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Order on Fiverr
-          </a>
-          <Link to="/contact" className="btn btn--outline">
-            Contact Me
+          <Link to="/contact" className="btn btn--primary">
+            Get a Quote
           </Link>
+          <a href={`mailto:${profile.email}`} className="btn btn--outline">
+            Email me
+          </a>
         </div>
       </div>
     </section>

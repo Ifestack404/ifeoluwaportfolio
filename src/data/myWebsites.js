@@ -1,43 +1,38 @@
 /**
- * ═══════════════════════════════════════════════════════════════
- *  ADD YOUR WEBSITE LINKS HERE (for Fiverr buyers to click)
- * ═══════════════════════════════════════════════════════════════
- *
- *  Fill in: name, url (https://...), category, description
- *  Leave url as '' for empty slots until you have more projects.
+ * Live websites shown to buyers. Keep names and copy client-facing.
  */
 
 export const myWebsites = [
   {
     id: 1,
-    name: 'Ponzi Scheme - Freelancing Platform',
+    name: 'Freelance Marketplace',
     url: 'https://ponzi-scheme-navy.vercel.app/',
-    category: 'Freelancing Platform',
+    category: 'Platform',
     description:
-      'Full-stack freelancing marketplace — connect freelancers with clients, project management, and secure payments.',
+      'A full-stack marketplace that connects clients with talent — project flow, profiles, and a clean product UI built for real use.',
   },
   {
     id: 2,
     name: 'CineStream',
     url: 'https://cinestream-1a4a.vercel.app/',
-    category: 'Streaming / Entertainment',
+    category: 'Entertainment',
     description:
-      'Movie & TV streaming platform — browse trending titles, genres, watchlists, and a Netflix-style UI.',
+      'A streaming-style movie platform with browsing, genres, and watchlists — built to feel fast, familiar, and premium on any screen.',
   },
   {
     id: 3,
     name: "Maison D'Or",
     url: 'https://friend-finder-delta.vercel.app/',
-    category: 'E-Commerce / Luxury',
+    category: 'Luxury commerce',
     description:
-      'Luxury fine jewellery storefront — elegant product showcase and premium brand experience.',
+      'A jewellery storefront with an elegant product showcase — the kind of site a premium brand can send to customers with confidence.',
   },
   {
     id: 4,
     name: 'DonAI Cinematic Story',
     url: 'https://donai-cinematic-story.vercel.app/',
-    category: 'Portfolio / Film',
+    category: 'Brand / film',
     description:
-      'Cinematic storytelling website built with engaging visuals and motion design.',
+      'A cinematic storytelling site with motion and atmosphere — made for creative brands that need to leave a strong first impression.',
   },
 ]

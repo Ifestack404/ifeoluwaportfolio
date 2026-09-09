@@ -18,7 +18,7 @@ export default function MyWebsitesShowcase() {
         </div>
 
         <div className="portfolio-work__grid">
-          {liveSites.map((site, index) => {
+          {liveSites.map((site) => {
             const domain = formatWebsiteDomain(site.url)
 
             return (
@@ -37,9 +37,14 @@ export default function MyWebsitesShowcase() {
                     <em>{domain}</em>
                   </span>
                   <span className="portfolio-card__stage">
-                    <span className="portfolio-card__index">0{index + 1}</span>
-                    <strong>{site.name}</strong>
-                    <small>Live website</small>
+                    <img
+                      src={site.image}
+                      alt={`${site.name} live website`}
+                      className="portfolio-card__image"
+                      width={1280}
+                      height={800}
+                      loading="lazy"
+                    />
                   </span>
                 </a>
 

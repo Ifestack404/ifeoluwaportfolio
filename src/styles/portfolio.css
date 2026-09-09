@@ -887,33 +887,23 @@ p {
 }
 
 .portfolio-card__stage {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 150px;
-  padding: 1.25rem 1.35rem 1.4rem;
-  background:
-    radial-gradient(ellipse at 80% 20%, rgba(210, 123, 85, 0.2), transparent 55%),
-    linear-gradient(180deg, #1c2124, #14181b);
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  background: #121517;
 }
 
-.portfolio-card__index {
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-}
-
-.portfolio-card__stage strong {
-  margin-top: 0.35rem;
-  font-size: 1.15rem;
-  color: var(--text-strong);
-}
-
-.portfolio-card__stage small {
-  margin-top: 0.2rem;
-  color: var(--text);
+.portfolio-card__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .portfolio-card__body {

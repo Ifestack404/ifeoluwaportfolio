@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { profile, stats } from '../data/site'
-import MoleculePortrait from './MoleculePortrait'
+import LogoHeroCanvas from './LogoHeroCanvas'
 
 export default function Hero() {
   return (
@@ -28,14 +28,6 @@ export default function Hero() {
             <Link to="/contact" className="btn btn--outline">
               Get a Quote
             </Link>
-            <a
-              href={profile.fiverrUrl}
-              className="hero__fiverr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Fiverr profile
-            </a>
           </div>
 
           <dl className="hero__stats">
@@ -48,7 +40,7 @@ export default function Hero() {
           </dl>
         </div>
 
-        <MoleculePortrait />
+        <LogoHeroCanvas />
       </div>
     </section>
   )
